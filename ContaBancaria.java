@@ -1,14 +1,5 @@
 import java.util.Scanner;
 
-/*
-Crie uma classe que representa uma conta bancaria que possua o número da conta e saldo. Está classe também deve executar os seguintes métodos:
-extrato (Mostra na tela o número e o saldo da conta)
-saque (Recebe como parâmetro um valor e retira este valor do saldo da conta)
-deposito (recebe como parâmetro um valor e adiciona este valor ao saldo da conta)
-Ao final das operações saque e deposito, sua classe deve imprimir o número e o saldo da conta.
-
-Crie uma classe para testar os métodos da classe conta bancaria.
- */
 public class ContaBancaria {
 
     Scanner sc = new Scanner(System.in);
@@ -18,22 +9,26 @@ public class ContaBancaria {
     float saldo;
 
     void Extrato(){
+        System.out.println("EXTRATO: ");
         System.out.println("Número da conta: " + this.numConta);
         System.out.println("Saldo: R$" + this.saldo);
+        System.out.println();
     }
 
     void Saque(){
-        System.out.println("Digite o valor a ser sacado: R$");
+        System.out.println("SAQUE: ");
+        System.out.print("Digite o valor a ser sacado: R$");
         saqueConta = sc.nextFloat();
-
         saldo -= saqueConta;
+        System.out.println();
     }
 
     void Deposito(){
-        System.out.println("Digite o valor a ser depositado: R$");
+        System.out.println("DEPOSITO: ");
+        System.out.print("Digite o valor a ser depositado: R$");
         depositoConta = sc.nextFloat();
-
         saldo += depositoConta;
+        System.out.println();
     }
 
 }
