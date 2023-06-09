@@ -21,21 +21,15 @@ public class Main {
 
             switch (op){
                 case 1:
-                    System.out.println("EXTRATO: ");
                     p1.Extrato();
-                    System.out.println();
                 break;
 
                 case 2:
-                    System.out.println("SAQUE: ");
                     p1.Saque();
-                    System.out.println();
                 break;
 
                 case 3:
-                    System.out.println("DEPOSITO: ");
                     p1.Deposito();
-                    System.out.println();
                 break;
             }
 
